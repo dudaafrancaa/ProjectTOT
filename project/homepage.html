@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTeduca</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="cabecalho1">
+        <h3>TOT news - A sua nova newsletter sobre Educação Corporativa! <a href="#">Inscreva-se aqui.</a></h3>
+    </div>
+    <div class="cabeçalho2">
+        <img src="img/logoTOT.png" alt="Logo TOTeduca">
+        <button>cursos personalizados</button>
+        <button>cursos de prateleira</button>
+        <button>plataforma de aprendizagem</button>
+        <button>consultoria</button>
+        <button>blog</button>
+        <button>ebook</button>
+    </div>
+
+   <div class="moldura">
+    <span>
+        <img src="img/equipeTOT.png" alt="equipesimbólica">
+    </span>
+        <h2>Soluções educativas, entrega de conhecimento e conexão para a sua organização</h2>
+        <p>Conteúdos estratégicos, desenvolvidos para a sua realidade, adaptados para os seus colaboradores e personalizados para sua empresa. 
+            Com a TOT, o cliente nunca anda sozinho.
+        </p>
+        <h4>O conteúdo é estratégico. A entrega, Humana</h4>
+        <button>Agendar demonstração</button>
+   </div>
+
+    <div class="menuClientes">
+        <h3>Nossos Clientes</h3>
+        <p> As empresas que geramos as experiências desejadas!</p>
+        <button><a href="Clientes.html">Saiba mais</a></button>
+    </div>
+
+    <div class="solucoes">
+        <h3>Soluções com propósito</h3>
+        <p>Entender o contexto, personalizar a jornada e caminhar lado a lado.</p>
+        <img img1 src="img/cursospersonalizados.png" alt="cursospersonalizados">
+        <img img2 src="img/plataformadeaprendizagem.png" alt="plataformadeaprendizagem">
+        <img img3 src="img/cursosdeprateleira.png" alt="cursosdeprateleira">
+        <img img4 src="img/consultoria educacional.png" alt="consultoriaeducacional">
+    </div>
+
+    <section class="diferenciais">
+        <div class="diferencial1">
+            <img src="img/highfive.png" alt="highfive">
+            <h3>+ de 2,5 milhões</h3>
+            <p>de aprendizes impactados com os nossos cursos.</p>
+        </div>
+        <div class="diferencial2">
+            <img src="img/computer.png" alt="computer">
+            <h3>+ de 1200</h3>
+            <p>projetos entregues para os nossos clientes.</p>
+        </div>
+        <div class="diferencial3">
+            <img src="img/chapeu.png" alt="capelo">
+            <h3>97%</h3>
+            <p>de engajamento e conclusão dos cursos desenvolvidos pela TOT</p>
+        </div>
+    </section>
+
+    <section class="sobre-material">
+        <div class="cardescuro">
+            <div class="cardclaro">
+                <h3>Material Gratuito</h3>
+                <p>Conheça o nosso Manual da Universidade Corporativa. Nele, você encontrará os 6 passos para uma implantação de sucesso na sua empresa. Aproveite!</p>
+                <button>BAIXE AGORA</button>
+                <img src="img/manual.png" alt="livro de manual">
+            </div>
+        </div>
+    </section>
+
+    <section class="cursosdeprateleira">
+        <h3>Cursos de prateleira</h3>
+        <div class="botao-centro">
+             <button>
+                <a href="Cursos.html">Saiba Mais</a>
+             </button>
+       </div>
+    </section>
+
+    <section class="Agendamento">
+        <div class="card">
+            <h3>Agende sua</h3>
+            <h3>demonstração</h3>
+            <form id="form-contato">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <input type="text" placeholder="Qual empresa você trabalha?" required>
+                <input type="email" placeholder="Digite aqui como podemos te ajudar" required>
+
+                <div class="g-recaptcha" data-sitekey="6LdHzpMsAAAAAGKNjam6asl0HYigPkvIJKPbG9fx"></div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <script>
+                document.getElementById("form-contato").addEventListener("submit", function(e) {
+                var response = grecaptcha.getResponse();
+
+            if (response.length === 0) {
+             e.preventDefault();
+              alert("Confirme que você não é um robô!");
+              } else {
+             alert("Formulário validado com reCAPTCHA");
+            }
+         });
+            </script>
+        </div>
+    </section>
+
+    <footer>
+  <div class="rodapé">
+
+    <div class="footer-esquerda">
+      <h3>Endereço</h3>
+      <p>R. Antônio da Veiga, Sala 10 - Victor Konder, Blumenau - SC - 89012-500</p>
+
+      <h3>Contatos</h3>
+      <ul>
+        <li>(47) 96427-5326</li>
+        <li>(47) 3516-4418</li>
+        <li>contato@toteduca.com.br</li>
+      </ul>
+
+      <div class="redes">
+        <img src="img/instagram.png">
+        <img src="img/linkedin.png">
+        <img src="img/facebook.png">
+        <img src="img/whatsapp.png">
+      </div>
+    </div>
+
+    <div class="footer-direita">
+      <h3>Inscreva-se para receber novidades!</h3>
+      <input type="text" placeholder="Nome Completo">
+      <input type="text" placeholder="Seu melhor Email">
+      <button>Enviar</button>
+    </div>
+
+    <img class="logo-footer" src="img/macacooo.png">
+
+    <p class="copy">
+      COPYRIGHT ® 2025. TOT EDUCAÇÃO CORPORATIVA. TODOS OS DIREITOS RESERVADOS
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
